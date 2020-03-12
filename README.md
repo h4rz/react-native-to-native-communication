@@ -21,5 +21,7 @@ Communication between React Native and Native Android App Communication
 ![](sample.gif)
 
 ## Reference -
+
 https://github.com/petterh/react-native-android-activity
+
 https://stackoverflow.com/questions/42253397/call-android-activity-from-react-native-code/43675819
