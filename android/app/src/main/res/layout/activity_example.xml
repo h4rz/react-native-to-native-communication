@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NativeAppActivity">
+    tools:context=".ExampleActivity">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_username_pass"
@@ -15,15 +15,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_eg"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:text="Go To Another Native Activity - Example Activity"
-        app:layout_constraintTop_toBottomOf="@id/tv_username_pass" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
