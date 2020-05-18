@@ -36,7 +36,7 @@ final class ActivityStarterModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    void navigateToExample() {
+    void navigateToExavmple() {
         Activity activity = getCurrentActivity();
         if (activity != null) {
             Intent intent = new Intent(activity, ExampleActivity.class);
