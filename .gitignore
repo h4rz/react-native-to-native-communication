@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 .npmrc
 
 # OSX
 .DS_Store
 
 # Xcode
+=======
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+>>>>>>> 70eed77189db6f2f07fb46da3a5abd5ebe1e4458
 build/
 *.pbxuser
 !default.pbxuser
@@ -21,6 +30,7 @@ DerivedData
 *.ipa
 *.xcuserstate
 
+<<<<<<< HEAD
 # CocoaPods
 ios/Pods/
 
@@ -31,10 +41,21 @@ ios/Pods/
 .project
 .settings/
 build/
+=======
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+>>>>>>> 70eed77189db6f2f07fb46da3a5abd5ebe1e4458
 local.properties
 *.iml
 
 # node.js
+<<<<<<< HEAD
+=======
+#
+>>>>>>> 70eed77189db6f2f07fb46da3a5abd5ebe1e4458
 node_modules/
 npm-debug.log
 yarn-error.log
@@ -43,12 +64,17 @@ yarn-error.log
 buck-out/
 \.buckd/
 *.keystore
+<<<<<<< HEAD
+=======
+!debug.keystore
+>>>>>>> 70eed77189db6f2f07fb46da3a5abd5ebe1e4458
 
 # fastlane
 #
 # It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
 # screenshots whenever they are needed.
 # For more information about the recommended setup visit:
+<<<<<<< HEAD
 # https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
 
 fastlane/report.xml
@@ -57,3 +83,16 @@ fastlane/screenshots
 
 # Visual Studio Code
 .vscode/
+=======
+# https://docs.fastlane.tools/best-practices/source-control/
+
+*/fastlane/report.xml
+*/fastlane/Preview.html
+*/fastlane/screenshots
+
+# Bundle artifact
+*.jsbundle
+
+# CocoaPods
+/ios/Pods/
+>>>>>>> 70eed77189db6f2f07fb46da3a5abd5ebe1e4458

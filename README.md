@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React Native Activity Demo
 
 ## Build Status
@@ -347,3 +348,32 @@ I just added a second version of `ActivityStarterModule.getActivityName` called 
 ## Issues
 
 The various Android apps explicitly call `SoLoader.init` because of [this issue](https://github.com/facebook/react-native/issues/26342). I have a [PR to fix it](https://github.com/facebook/react-native/pull/26343). Once this is in (assuming Facebook accepts it) I'll remove them.
+=======
+# react-native-to-native-communication
+Communication between React Native and Native Android App Communication
+
+## React-Native -> Native Android Communication
+
+1.  Create ActivityStarterModule.java in your android app  
+    ActivityStarter is just a Java class that implements a React Native Java interface called NativeModule.
+    The heavy lifting of this interface is already done by BaseJavaModule, so one normally extends either
+    that one or ReactContextBaseJavaModule
+
+2.  Create a custom package which implements ReactPackage interface. This package will expose our custom module.
+    One ReactPackage can expose any number of custom modules.
+
+3.  Update MainApplication.java to include your newly created package in getPackages()
+
+4.  Import 'NativeModules' from 'react-native' package in your javascript(.js) file.
+    Use your ActivityStarterModule's method with the help of NativeModules package just imported.
+
+## Post Implementation
+
+![](sample.gif)
+
+## Reference -
+
+https://github.com/petterh/react-native-android-activity
+
+https://stackoverflow.com/questions/42253397/call-android-activity-from-react-native-code/43675819
+>>>>>>> 70eed77189db6f2f07fb46da3a5abd5ebe1e4458

@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 rootProject.name = 'ReactNativeActivityDemo'
 
 // https://react-native-community.github.io/upgrade-helper/?from=0.59.10&to=0.60.0
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle")
 applyNativeModulesSettingsGradle(settings)
 
+=======
+rootProject.name = 'SampleRNApp'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+>>>>>>> 70eed77189db6f2f07fb46da3a5abd5ebe1e4458
 include ':app'

@@ -1,4 +1,5 @@
 /**
+<<<<<<< HEAD
  * Sample React Native App
  * https://github.com/facebook/react-native
  */
@@ -154,3 +155,13 @@ eventEmitter.addListener(eventEmitterModule.MyEventName, (params) => {
   exposedToJava.setMessage(params);
   alert(params);
 });
+=======
+ * @format
+ */
+
+import {AppRegistry} from 'react-native';
+import App from './App';
+import {name as appName} from './app.json';
+
+AppRegistry.registerComponent(appName, () => App);
+>>>>>>> 70eed77189db6f2f07fb46da3a5abd5ebe1e4458

@@ -1,4 +1,5 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">React Native Android Activity Demo</string>
     <string name="title_activity_example">ExampleActivity</string>
     <string name="example_activity_title">Example activity</string>
@@ -7,4 +8,7 @@
     <string name="reverse_text_activity_title">Reversed text!</string>
     <string name="menuitem_reverse_text_label">Reverse text</string>
     <string name="call_javascript_from_java">Call JavaScript from Java</string>
+=======
+    <string name="app_name">SampleRNApp</string>
+>>>>>>> 70eed77189db6f2f07fb46da3a5abd5ebe1e4458
 </resources>

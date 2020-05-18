@@ -1,2 +1,5 @@
 *.pbxproj -text
+<<<<<<< HEAD
 ios/* linguist-vendored
+=======
+>>>>>>> 70eed77189db6f2f07fb46da3a5abd5ebe1e4458
