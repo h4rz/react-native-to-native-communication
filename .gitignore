@@ -1,19 +1,9 @@
-<<<<<<< HEAD
-.npmrc
-
-# OSX
-.DS_Store
-
 # Xcode
-=======
-# OSX
-#
-.DS_Store
-
-# Xcode
-#
->>>>>>> 70eed77189db6f2f07fb46da3a5abd5ebe1e4458
-build/
+!**/*.xcodeproj
+!**/*.pbxproj
+!**/*.xcworkspacedata
+!**/*.xcsettings
+!**/*.xcscheme
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -29,70 +19,89 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+project.xcworkspace
 
-<<<<<<< HEAD
-# CocoaPods
-ios/Pods/
+# Gradle
+/build/
+/RNTester/android/app/build/
+/RNTester/android/app/gradle/
+/RNTester/android/app/gradlew
+/RNTester/android/app/gradlew.bat
+/ReactAndroid/build/
+/ReactAndroid/gradle/
+/ReactAndroid/gradlew
+/ReactAndroid/gradlew.bat
 
-# Android/IntelliJ
-.classpath
-.idea
-.gradle
+# Buck
+.buckd
+buck-out
+/ReactAndroid/src/main/jni/prebuilt/lib/
+/ReactAndroid/src/main/gen
+
+# Android Studio
 .project
-.settings/
-build/
-=======
-# Android/IntelliJ
-#
-build/
+.settings
+.classpath
+
+# Watchman
+.watchmanconfig
+
+# Android
 .idea
 .gradle
->>>>>>> 70eed77189db6f2f07fb46da3a5abd5ebe1e4458
 local.properties
 *.iml
+/android/
 
-# node.js
-<<<<<<< HEAD
-=======
-#
->>>>>>> 70eed77189db6f2f07fb46da3a5abd5ebe1e4458
-node_modules/
-npm-debug.log
-yarn-error.log
+# Node
+node_modules
+*.log
+.nvm
+/bots/node_modules/
+package-lock.json
 
-# BUCK
-buck-out/
-\.buckd/
-*.keystore
-<<<<<<< HEAD
-=======
-!debug.keystore
->>>>>>> 70eed77189db6f2f07fb46da3a5abd5ebe1e4458
+# OS X
+.DS_Store
 
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-<<<<<<< HEAD
-# https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
+# Test generated files
+/ReactAndroid/src/androidTest/assets/AndroidTestBundle.js
+*.js.meta
 
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots
+/coverage
+/third-party
 
-# Visual Studio Code
-.vscode/
-=======
-# https://docs.fastlane.tools/best-practices/source-control/
+# Root dir shouldn't have Xcode project
+/*.xcodeproj
 
-*/fastlane/report.xml
-*/fastlane/Preview.html
-*/fastlane/screenshots
+# ReactCommon subdir shouldn't have Xcode project
+/ReactCommon/**/*.xcodeproj
+RNTester/build
 
-# Bundle artifact
-*.jsbundle
+# Libs that shouldn't have Xcode project
+/Libraries/FBLazyVector/**/*.xcodeproj
+/Libraries/FBReactNativeSpec/**/*.xcodeproj
+/Libraries/RCTRequired/**/*.xcodeproj
+/React/CoreModules/**/*.xcodeproj
+/packages/react-native-codegen/**/*.xcodeproj
 
 # CocoaPods
-/ios/Pods/
->>>>>>> 70eed77189db6f2f07fb46da3a5abd5ebe1e4458
+/template/ios/Pods/
+/template/ios/Podfile.lock
+/RNTester/Gemfile.lock
+
+# Ignore RNTester specific Pods, but keep the __offline_mirrors__ here.
+RNTester/Pods/*
+!RNTester/Pods/__offline_mirrors
+
+# react-native-codegen
+/packages/react-native-codegen/lib
+/ReactCommon/fabric/components/rncore/
+/schema-native-modules.json
+/schema-rncore.json
+
+# Visual studio
+.vscode
+.vs
+
+# Android memory profiler files
+*.hprof
